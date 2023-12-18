@@ -71,7 +71,7 @@ SUITE(KeyTest) {
 
 SUITE(KeyLengthTest) {
     TEST(KeyGreaterThanTextLength) {
-        CHECK_THROW(Cipher(22).getValidText("timp"), cipher_error);
+        CHECK_THROW(Cipher(222).getValidText("ab"), cipher_error);
     }
 }
 int main() {
